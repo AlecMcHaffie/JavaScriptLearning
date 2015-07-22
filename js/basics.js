@@ -28,5 +28,22 @@ var multiplication = 5 * 2; // multiplication = 10
 var division = 5 / 2.5; // division = 2
 var remainder = 5 % 2; // remainder = 1
 
-var postfix = 5;
-var prefix = 5;
+var postfix = 5; // value returned and then increment/decrement
+var prefix = 5; // value increment/decrement and then returned
+
+//Assignment Operators
+var additionAssignment = 1;
+additionAssignment += 1; // additionAssignment = 2
+var subtractionAssignment = 1;
+subtractionAssignment -= 1; // subtractionAssignment = 0
+
+var multiplicationAssignment = 2;
+var divisionAssignment = 5;
+var modulusAssignment = 5;
+
+multiplicationAssignment *= 2; // multiplicationAssignment = 4
+divisionAssignment /= 2.5; // divisionAssignment = 2
+modulusAssignment %= 2; // modulusAssignment = 1
+
+//Comparison Operators
+//Used in conditional statements such as if statements
