@@ -104,3 +104,35 @@ var hoistedVariable = 'test';
 //javascript will check local scope for a variable first and then move up to the parent scope until it reaches global
 //Only functions can create a scope
 //common to wrap all code in a self invoking function
+
+
+//THIS
+//Usual an object
+
+//Strict Mode
+//Enforces stricter rules in javascript
+//recommended to always be Used
+//forces silent errors to throw an error
+//prevents accidental global variables
+//'use strict';
+
+(function() {
+    'use strict';
+    // this is undefined, function is being called automatically
+
+    var object = {
+        property: 'I belong to this',
+        method: function () {
+            return this.property;
+        }
+    };
+
+    console.log(object.method());
+
+    function Person(name) {
+        this.name = name;
+    };
+
+    var bob = new Person('Bob');
+    console.log(bob.name);
+}());
