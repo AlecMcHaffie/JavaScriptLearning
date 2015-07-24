@@ -63,4 +63,30 @@ function getThingByColour(colour) {
     };
 
     return things[colour] || 'Sorry, no thign ith that colour exists';
+};
+
+//FUNCTIONS
+
+function myFunction(message) {
+    console.log(message);
+    return true;
+};
+//Functions always return a value
+/*
+var myOtherFunction = function () {
+    console.log('function expression');
 }
+//Anonymous function, has no identifier
+*/
+
+var myOtherFunction = function () {
+    console.log('function expression');
+}; //Causing issues in IE 7
+
+console.log(hoistedVariable);
+var hoistedVariable = 'test';
+
+(function invokeImmediately() {
+    console.log('invoked immediately');
+}());
+//iife shortcut
