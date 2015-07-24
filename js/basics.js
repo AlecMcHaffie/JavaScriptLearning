@@ -47,3 +47,20 @@ modulusAssignment %= 2; // modulusAssignment = 1
 
 //Comparison Operators
 //Used in conditional statements such as if statements
+
+//OBJECTS
+
+var object = {
+    property1: true,
+    property2: 'hello'
+};
+
+function getThingByColour(colour) {
+    var things = {
+        red: 'a red thing',
+        green: 'a green thing',
+        blue: 'a blue thing'
+    };
+
+    return things[colour] || 'Sorry, no thign ith that colour exists';
+}
