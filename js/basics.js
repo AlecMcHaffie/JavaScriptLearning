@@ -90,3 +90,17 @@ var hoistedVariable = 'test';
     console.log('invoked immediately');
 }());
 //iife shortcut
+
+
+//SCOPE
+//defines the visability of variables in different places in code
+//GLOBAL = top scope. Generally the widow object
+//Can be overwritten by other scripts
+//globally declared variables become properties of the window object
+//When a function si declared it creates it's own scope
+//javascript has function scope
+//scope of a variable is local to it's function
+//cannot be accessed outside of function
+//javascript will check local scope for a variable first and then move up to the parent scope until it reaches global
+//Only functions can create a scope
+//common to wrap all code in a self invoking function
