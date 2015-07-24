@@ -136,3 +136,8 @@ var hoistedVariable = 'test';
     var bob = new Person('Bob');
     console.log(bob.name);
 }());
+
+//RESERVED WORDS
+//Sometimes known as keywords
+//Canot be used as identifiers, will throw an error
+//Generally editors alert to it
