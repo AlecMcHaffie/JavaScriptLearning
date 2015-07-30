@@ -44,4 +44,28 @@
     console.log(array.slice(0, 1));
     console.log(array.slice(1, -1));
 
+    array.forEach(function (value, index) {
+        console.log('Item at Index' + index + ' has the value ' + value);
+    });
+
+    console.log(array.every(function (value) {
+        return typeof value === 'string';
+    }));
+
+    console.log(['a', 1, 'b', 2, 'c', 3].filter(function (value) {
+        return typeof value !== 'number';
+    }));
+
+    console.log(array.map(function (value) {
+        return value.toUpperCase();
+    }));
+
+    console.log([1, 2, 3].reduce(function (total, value) {
+        return total += value;
+    }));
+
+    console.log([1, 2, 3].reduce(function (total, value) {
+        return total += value;
+    }, 4));
+
 }());
