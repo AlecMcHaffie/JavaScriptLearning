@@ -53,4 +53,19 @@
     console.log(subHeading.parentNode.nodeName);
 
     console.log(heading.firstChild.nextSibling.nodeName);
+
+    //Adding & Removing elements
+    document.body.appendChild(subHeading);
+    document.body.insertBefore(subHeading, heading);
+    document.body.removeChild(heading);
+    //document.body.removeChild(heading); //throws error because Child doesn't exist
+
+    if (document.body.contains(heading)) {
+        document.body.removeChild(heading);
+    };
+
+    var substitute = document.createElement('i');
+    substitute.textContent = 'I have been swapped in';
+    document.body.replaceChild(substitute, subHeading); //Puts first argument in second argument
+
 }());
