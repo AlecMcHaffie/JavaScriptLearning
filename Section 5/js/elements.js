@@ -33,4 +33,24 @@
     subHeading.removeAttribute('contenteditable');
     console.log(subHeading.hasAttribute('contenteditable'));
 
+    //DOM Traversal
+    var heading = document.getElementsByTagName('header')[0];
+    var headingLength = heading.childNodes.length;
+
+    var x, length;
+    for (var x = 0; x < headingLength ; x += 1) {
+        if (heading.childNodes[x].nodeType === 1) {
+            console.log('I am a ' + heading.childNodes[x].tagName);
+        };
+    };
+
+    console.log(heading.children.length);
+
+    console.log(heading.childNodes[0].nodeName);
+    console.log(heading.childNodes[1].nodeName);
+    console.log(heading.firstChild);
+
+    console.log(subHeading.parentNode.nodeName);
+
+    console.log(heading.firstChild.nextSibling.nodeName);
 }());
